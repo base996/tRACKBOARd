@@ -8,4 +8,6 @@ keys.each do |n|
   array_data.push(file_data)
   file.close
 
-  if array_data[n].split().
+  if array_data[n].split().last.include? "Vazio"
+    puts "bloco #{n+1} correto."
+  elsif array_data[n].split().last.eql? array_data[n-1].split("\n")[3
