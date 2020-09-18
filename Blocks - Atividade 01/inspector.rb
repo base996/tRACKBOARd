@@ -10,4 +10,8 @@ keys.each do |n|
 
   if array_data[n].split().last.include? "Vazio"
     puts "bloco #{n+1} correto."
-  elsif array_data[n].split().last.eql? array_data[n-1].split("\n")[3
+  elsif array_data[n].split().last.eql? array_data[n-1].split("\n")[3].match(/\b[a-f0-9]{64}\b/).to_s
+    puts "bloco #{n+1} correto."
+  else
+    puts "bloco #{n+1} incorreto."
+  en
