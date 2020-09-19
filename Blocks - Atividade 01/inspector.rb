@@ -14,4 +14,7 @@ keys.each do |n|
     puts "bloco #{n+1} correto."
   else
     puts "bloco #{n+1} incorreto."
-  en
+  end
+end
+
+
