@@ -12,4 +12,8 @@ contract Presence {
     mapping(address => Employee) public office;
     
     //atribui o criador do contrato
-   
+    constructor() public {
+        manager = msg.sender;
+    }
+    
+    //função para registrar um fun
