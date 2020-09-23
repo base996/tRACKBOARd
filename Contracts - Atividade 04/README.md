@@ -30,4 +30,6 @@ contract Presence {
     }
 }
 
-Linguagem
+Linguagem de preferência: Ruby
+Biblioteca pra trabalhar com Smart Contracts: ethereum.rb
+Github: https://github.com/Eth
