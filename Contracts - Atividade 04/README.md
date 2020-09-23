@@ -18,4 +18,9 @@ contract Presence {
     
     //função para registrar um funcionário
     function recordEmployee(address employee) public {
-        if(msg.sender != manager) retur
+        if(msg.sender != manager) return;
+        office[employee].onWorkSchedule = true;
+        office[employee].presences = 0;
+    }
+    
+    //fun
