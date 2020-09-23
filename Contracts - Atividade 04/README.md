@@ -8,4 +8,8 @@ contract Presence {
         uint presences;
     }
     
-    address pu
+    address public manager;
+    mapping(address => Employee) public office;
+    
+    //atribui o criador do contrato
+   
