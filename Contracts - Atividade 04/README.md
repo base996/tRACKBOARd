@@ -23,4 +23,6 @@ contract Presence {
         office[employee].presences = 0;
     }
     
-    //fun
+    //função para registrar a presença do funcionário
+    function recordPresence() public {
+        if (msg.sender == man
