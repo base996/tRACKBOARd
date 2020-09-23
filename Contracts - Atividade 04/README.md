@@ -16,4 +16,6 @@ contract Presence {
         manager = msg.sender;
     }
     
-    //função para registrar um fun
+    //função para registrar um funcionário
+    function recordEmployee(address employee) public {
+        if(msg.sender != manager) retur
