@@ -29,3 +29,4 @@ keys_array.each do |value|
 end
 
 puts "Novo arquivo 'decrypted_messages.txt' criado. "
+
