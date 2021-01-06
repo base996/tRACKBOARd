@@ -11,4 +11,7 @@ mensagens.each do |n|
   end
 
   file = File.open(n)
-  file_data = fi
+  file_data = file.read
+  plain = Base64.decode64(file_data)
+  File.write("mensagem_#{n.scan(/\d/).join('')}_decoded.txt", plain)
+  file.clos
