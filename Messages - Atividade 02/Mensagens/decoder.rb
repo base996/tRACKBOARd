@@ -14,4 +14,8 @@ mensagens.each do |n|
   file_data = file.read
   plain = Base64.decode64(file_data)
   File.write("mensagem_#{n.scan(/\d/).join('')}_decoded.txt", plain)
-  file.clos
+  file.close
+end
+
+puts "Novos arquivos 'mensagem_xxx_decoded.txt' criados."
+
